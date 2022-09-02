@@ -1,0 +1,78 @@
+/* Variables */
+:root {
+    --clr-dark-blue: hsl(218, 44%, 22%);
+    --clr-grayish-blue: hsl(220, 15%, 55%);
+    --clr-light-gray: hsl(212, 45%, 89%);
+    --clr-white: hsl(0, 0%, 100%);
+
+    --ff-primary: 'Outfit', sans-serif;
+
+    --fw-bold: 700;
+    --fw-regular: 400;
+}
+
+
+/* Resets */
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    box-sizing: border-box;
+}
+
+/* General */
+body {
+    font-size: 15px;
+    font-family: var(--ff-primary);
+    background-color: var(--clr-light-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Utility classes */
+.text-clr-dark-blue {
+    color: var(--clr-dark-blue)
+}
+.text-clr-grayish-blue {
+    color: var(--clr-grayish-blue)
+}
+
+.fw-bold {
+    font-weight: var(--fw-bold)
+}
+.fw-regular {
+    font-weight: var(--fw-regular);
+}
+
+/* Main */
+main {
+    --max-width: 400px;
+    --padding: 2em;
+
+    max-width: min(var(--max-width), 100% - 3em);
+    background: var(--clr-white);
+    margin-inline: auto;
+    padding: 1em;
+    padding-bottom: 2.5em;
+    border-radius: 1em;
+    text-align: center;
+    box-shadow: 0 9px 20px 0px hsl(0deg 0% 0% / 20%);
+}
+
+img {
+    width: 100%;
+    border-radius: 1em;
+    object-fit: cover;
+}
+
+h1 {
+    margin-block: 1em;
+    font-size: 1.5rem;
+}
+
+h1,
+p {
+    margin-inline: 1.5em;
+}
